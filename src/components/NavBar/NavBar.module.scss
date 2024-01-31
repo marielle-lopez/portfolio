@@ -5,13 +5,18 @@
   gap: 50px;
 
   &__link {
-    color: palette.$primary;
-    font-size: small;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
     margin: 4px 0;
     padding: 5px;
+    color: palette.$primary;
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: palette.$primary-hover;
+    }
 
     &__active {
       border-top: 4px solid palette.$accent-blue;
