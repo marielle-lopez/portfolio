@@ -18,6 +18,7 @@
 ### Low Priority
 
 - Make 'Download CV' button functional
+- Create a gradient top-border to active NavLink
 
 ## Task Completion History
 
