@@ -1,0 +1,59 @@
+@use "../../styles/partials/variables/palette";
+@use "../../styles/partials/variables/typography";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &__external_links {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__link {
+      display: flex;
+    }
+
+    &__icon {
+      width: 20px;
+      object-fit: contain;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(2.5);
+      }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    font-family: typography.$primary;
+    font-weight: 700;
+    color: palette.$primary;
+    background: none;
+    border: 1px solid palette.$border;
+    border-radius: 50px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: palette.$primary-btn-hover;
+    }
+
+    &__icon {
+      height: 15px;
+    }
+  }
+}
