@@ -19,7 +19,7 @@
 
 - Make 'Download CV' button functional
 
-## Time Completion History
+## Task Completion History
 
 ### January 31, 2024
 
