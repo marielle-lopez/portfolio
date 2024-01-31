@@ -1,5 +1,7 @@
+import MainWrapper from "../../containers/MainWrapper/MainWrapper";
+
 const AboutPage = () => {
-  return <main>AboutPage</main>;
+  return <MainWrapper>AboutPage</MainWrapper>;
 };
 
 export default AboutPage;

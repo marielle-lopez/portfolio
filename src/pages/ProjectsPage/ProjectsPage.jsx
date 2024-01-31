@@ -1,5 +1,7 @@
+import MainWrapper from "../../containers/MainWrapper/MainWrapper";
+
 const ProjectsPage = () => {
-  return <main>ProjectsPage</main>;
+  return <MainWrapper>ProjectsPage</MainWrapper>;
 };
 
 export default ProjectsPage;
