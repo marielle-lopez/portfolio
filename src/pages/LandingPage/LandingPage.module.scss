@@ -1,0 +1,102 @@
+@use "../../styles/partials/variables/palette";
+@use "../../styles/partials/variables/typography";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img {
+  position: relative;
+  z-index: 0;
+  width: 350px;
+  padding: 30px;
+  border: 1px solid palette.$border;
+  border-radius: 225px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #e8e8e81c 15%,
+    #e8e8e83f 25%,
+    #e8e8e85f 35%,
+    #e8e8e8e3 60%,
+    #e8e8e8 70%,
+    #e8e8e8 80%,
+    #e8e8e8 100%
+  );
+
+  &__greeting {
+    margin-left: 60px;
+    font-family: typography.$accent-secondary;
+    font-weight: 600;
+    color: #bbbaba;
+  }
+
+  &__heading {
+    display: flex;
+    gap: 10px;
+    font-family: typography.$accent-secondary;
+    font-size: 48px;
+
+    &__opening_tag {
+      font-family: typography.$accent-primary;
+      background-image: linear-gradient(
+        45deg,
+        palette.$accent-blue,
+        palette.$accent-pink,
+        palette.$accent-orange
+      );
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    &__closing_tag {
+      font-family: typography.$accent-primary;
+      background-image: linear-gradient(
+        315deg,
+        palette.$accent-blue,
+        palette.$accent-pink,
+        palette.$accent-orange
+      );
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    &__cursor {
+      background-color: palette.$primary;
+      width: 5px;
+      height: 95%;
+      animation: blink 1s infinite;
+    }
+  }
+}
+
+.role {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: small;
+  color: #bbbaba;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
