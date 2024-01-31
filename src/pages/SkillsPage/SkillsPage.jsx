@@ -1,5 +1,7 @@
+import MainWrapper from "../../containers/MainWrapper/MainWrapper";
+
 const SkillsPage = () => {
-  return <main>SkillsPage</main>;
+  return <MainWrapper>SkillsPage</MainWrapper>;
 };
 
 export default SkillsPage;
