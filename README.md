@@ -24,7 +24,6 @@
 ## To-Do
 
 - Add 'Download CV' button
-- Fix spacing of items in Header component
 - Make email icon clickable; copies email to clipboard
 
 ### Low Priority
