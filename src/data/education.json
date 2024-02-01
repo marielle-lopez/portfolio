@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "startYear": "2022",
+    "endYear": "Present",
+    "img": {
+      "path": "../src/assets/rmit-logo.png",
+      "alt": "RMIT logo"
+    },
+    "description": "BCompSc"
+  },
+  {
+    "id": 2,
+    "startYear": "2018",
+    "endYear": "2020",
+    "img": {
+      "path": "../src/assets/uom-logo.png",
+      "alt": "The University of Melbourne logo"
+    },
+    "description": "BSc in Pathology"
+  },
+  {
+    "id": 3,
+    "startYear": "2017",
+    "endYear": null,
+    "img": {
+      "path": "../src/assets/acu-logo.png",
+      "alt": "Australian Catholic University logo"
+    },
+    "description": "Non-Award Step-Up Pathway in Health Services"
+  }
+]

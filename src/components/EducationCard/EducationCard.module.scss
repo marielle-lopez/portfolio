@@ -1,0 +1,27 @@
+@use "../../styles/partials/variables/palette";
+@use "../../styles/partials/variables/typography";
+
+.education_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 150px;
+
+  &__period {
+    font-family: typography.$accent-secondary;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  &__img {
+    filter: grayscale(1) brightness(0) opacity(0.85);
+    height: 35px;
+  }
+
+  &__desc {
+    text-align: center;
+    font-size: 14px;
+  }
+}

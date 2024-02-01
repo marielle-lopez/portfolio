@@ -1,0 +1,25 @@
+@use "../../styles/partials/variables/typography";
+
+.page_line {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 50px 0;
+
+  &__heading {
+    font-family: typography.$accent-secondary;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  &__line {
+    flex-grow: 1;
+    width: 100px;
+    height: 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
