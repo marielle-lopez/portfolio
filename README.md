@@ -31,9 +31,7 @@
 - Replace image with CapsuleImg component on landing page
 - Make 'Download CV' button functional
 - Create a gradient top-border to active NavLink
-- Add hover effect to logo in Header component
 - Make content scrollable without making browser adding a scroll bar
-- Change icons in Header component to open a new tab
 
 ## Task Completion History
 
