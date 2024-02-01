@@ -1,0 +1,7 @@
+@use "../../styles/partials/variables/typography";
+@use "../../styles/partials/variables/palette";
+
+.page_heading {
+  font-family: typography.$accent-primary;
+  font-size: 64px;
+}
