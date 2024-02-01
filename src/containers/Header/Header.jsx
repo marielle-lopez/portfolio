@@ -5,15 +5,23 @@ import NavBar from "../../components/NavBar/NavBar";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <NavBar />
-      <NavLink to="/">
-        <img
-          className={styles.header__logo}
-          src="../src/assets/logo.png"
-          alt="Marielle Lopez logo"
-        />
-      </NavLink>
-      <div className={styles.header__right}>
+      <div className={[styles.header__section, styles.header__left].join(" ")}>
+        <NavBar />
+      </div>
+
+      <div
+        className={[styles.header__section, styles.header__centre].join(" ")}
+      >
+        <NavLink to="/">
+          <img
+            className={styles.header__logo}
+            src="../src/assets/logo.png"
+            alt="Marielle Lopez logo"
+          />
+        </NavLink>
+      </div>
+
+      <div className={[styles.header__right, styles.header__section].join(" ")}>
         <div className={styles.header__right__external_links}>
           <Link
             className={styles.header__right__link}

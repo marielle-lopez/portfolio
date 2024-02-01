@@ -7,6 +7,14 @@
   align-items: center;
   width: 100%;
 
+  &__section {
+    width: 30%;
+  }
+
+  &__centre {
+    text-align: center;
+  }
+
   &__logo {
     height: 40px;
   }
@@ -14,6 +22,7 @@
   &__right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 50px;
 
     &__external_links {
