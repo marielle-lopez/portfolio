@@ -32,6 +32,7 @@
 - Make 'Download CV' button functional
 - Create a gradient top-border to active NavLink
 - Make content scrollable without making browser adding a scroll bar
+- Add music via Spotify
 
 ## Task Completion History
 
