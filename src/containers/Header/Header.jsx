@@ -26,6 +26,7 @@ const Header = () => {
           <Link
             className={styles.header__right__link}
             to="https://github.com/marielle-lopez"
+            target="_blank"
           >
             <img
               className={styles.header__right__icon}
@@ -36,6 +37,7 @@ const Header = () => {
           <Link
             className={styles.header__right__link}
             to="https://www.linkedin.com/in/marielle-lopez/"
+            target="_blank"
           >
             <img
               className={styles.header__right__icon}
