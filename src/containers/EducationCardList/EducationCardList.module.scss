@@ -1,0 +1,10 @@
+.education_card_container {
+  display: flex;
+  gap: 40px;
+
+  &__star_separator {
+    width: 11px;
+    object-fit: contain;
+    filter: opacity(0.25);
+  }
+}
