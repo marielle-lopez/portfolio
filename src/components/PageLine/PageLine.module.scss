@@ -3,8 +3,9 @@
 .page_line {
   display: flex;
   align-items: center;
+  gap: 20px;
   width: 100%;
-  gap: 15px;
+  margin: 50px 0;
 
   &__heading {
     font-family: typography.$accent-secondary;
