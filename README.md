@@ -23,6 +23,8 @@
 
 ## To-Do
 
+- Upload skill-associated logos
+- Create SkillCard component
 - Add 'Download CV' button
 - Make email icon clickable; copies email to clipboard
 
