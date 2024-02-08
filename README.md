@@ -23,8 +23,8 @@
 
 ## To-Do
 
+- Media queries
 - Upload skill-associated logos
-- Create SkillCard component
 - Add 'Download CV' button
 - Make email icon clickable; copies email to clipboard
 
@@ -37,6 +37,14 @@
 - Add music via Spotify
 
 ## Task Completion History
+
+### February 8, 2024
+
+- Completing design mockups for 'Skills' and 'Projects' pages on Figma
+- Created SkillCard component and corresponding container component for Skills page
+- Added skill information to a JSON file and used such file for the Skills page
+
+Majority of the work today was associated with the Skills page. For my design of this page, I represented each skill in a small card, which I developed in this project (i.e., SkillCard component).
 
 ### February 1, 2024
 
