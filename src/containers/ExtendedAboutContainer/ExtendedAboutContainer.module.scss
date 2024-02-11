@@ -20,6 +20,10 @@
     gap: 35px;
   }
 
+  @include media-queries.tablet {
+    gap: 50px;
+  }
+
   &__imgs {
     display: flex;
 
@@ -31,7 +35,7 @@
     &__img2 {
       position: relative;
       z-index: 1;
-      margin: 50px 0 0 -150px;
+      margin: 50px 0 0 -125px;
     }
   }
 

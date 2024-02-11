@@ -25,6 +25,10 @@
     padding: 35px 40px 0 40px;
   }
 
+  @include media-queries.tablet {
+    width: 300px;
+  }
+
   &__text {
     display: flex;
     flex-wrap: wrap;

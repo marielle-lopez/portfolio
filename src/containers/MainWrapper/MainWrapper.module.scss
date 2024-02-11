@@ -22,4 +22,8 @@
   @include media-queries.small-tablet {
     width: 80%;
   }
+
+  @include media-queries.tablet {
+    width: 80%;
+  }
 }

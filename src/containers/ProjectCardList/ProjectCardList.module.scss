@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins/media-queries";
+
 .project_card_list {
   display: flex;
   flex-wrap: wrap;
