@@ -1,5 +1,6 @@
 @use "/src/styles/partials/variables/typography";
 @use "/src/styles/partials/variables/palette";
+@use "/src/styles/partials/mixins/media-queries";
 
 * {
   padding: 0;
@@ -27,7 +28,12 @@ body {
   align-items: center;
   flex-grow: 1;
   width: 1500px;
-  padding: 35px 0;
+  padding: 35px 15px;
+
+  @include media-queries.small-phone {
+    width: 100%;
+    padding: 25px 0;
+  }
 }
 
 // :root {

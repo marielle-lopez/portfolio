@@ -1,3 +1,4 @@
+import styles from "./AboutPage.module.scss";
 import MainWrapper from "../../containers/MainWrapper/MainWrapper";
 import PageHeading from "../../components/PageHeading/PageHeading";
 import PageLine from "../../components/PageLine/PageLine";

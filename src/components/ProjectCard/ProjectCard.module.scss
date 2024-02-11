@@ -1,5 +1,6 @@
 @use "../../styles/partials/variables/typography";
 @use "../../styles/partials/variables/palette";
+@use "../../styles/partials/mixins/media-queries";
 
 .project_card {
   display: flex;
@@ -11,6 +12,12 @@
   padding: 40px 45px 0 45px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 45px;
+
+  @include media-queries.small-phone {
+    width: 240px;
+    border-radius: 35px;
+    padding: 35px 40px 0 40px;
+  }
 
   &__text {
     display: flex;
@@ -32,10 +39,18 @@
         display: flex;
         gap: 5px;
 
+        @include media-queries.small-phone {
+          gap: 8px;
+        }
+
         &__link {
           height: 20px;
           opacity: 25%;
           transition: 0.3s;
+
+          @include media-queries.small-phone {
+            height: 18px;
+          }
 
           &:hover {
             opacity: 100%;
@@ -58,5 +73,10 @@
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-left: 1px solid rgba(0, 0, 0, 0.05);
     border-right: 1px solid rgba(0, 0, 0, 0.05);
+
+    @include media-queries.small-phone {
+      width: 95%;
+      height: 130px;
+    }
   }
 }

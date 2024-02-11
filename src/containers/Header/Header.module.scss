@@ -1,75 +1,121 @@
 @use "../../styles/partials/variables/palette";
 @use "../../styles/partials/variables/typography";
+@use "../../styles/partials/mixins/media-queries";
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
+  flex-direction: column;
   width: 100%;
 
-  &__section {
-    width: 30%;
-  }
+  &_small {
+    display: none;
 
-  &__centre {
-    text-align: center;
-  }
+    @include media-queries.small-phone {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
 
-  &__logo {
-    height: 40px;
-    transition: 0.3s;
-
-    &:hover {
-      filter: brightness(1.25);
+    &__logo {
+      height: 30px;
     }
   }
 
-  &__right {
+  &_large {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
+    width: 100%;
+    margin-bottom: 100px;
 
-    &__external_links {
-      display: flex;
-      gap: 20px;
+    @include media-queries.small-phone {
+      justify-content: space-evenly;
+      margin-bottom: 50px;
     }
 
-    &__link {
-      display: flex;
-    }
+    &__section {
+      width: 30%;
 
-    &__icon {
-      width: 20px;
-      object-fit: contain;
-      transition: 0.3s;
-      cursor: pointer;
-
-      &:hover {
-        filter: brightness(2.5);
+      @include media-queries.small-phone {
+        width: max-content;
       }
     }
-  }
 
-  &__btn {
-    display: flex;
-    gap: 10px;
-    padding: 10px 20px;
-    font-family: typography.$primary;
-    font-weight: 700;
-    color: palette.$primary;
-    background: none;
-    border: 1px solid palette.$border;
-    border-radius: 50px;
-    transition: 0.3s;
-
-    &:hover {
-      background-color: palette.$primary-btn-hover;
+    &__centre {
+      text-align: center;
     }
 
-    &__icon {
-      height: 15px;
+    &__logo {
+      height: 40px;
+      transition: 0.3s;
+
+      @include media-queries.small-phone {
+        display: none;
+      }
+
+      &:hover {
+        filter: brightness(1.25);
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 50px;
+
+      &__external_links {
+        display: flex;
+        gap: 20px;
+
+        @include media-queries.small-phone {
+          gap: 16px;
+        }
+      }
+
+      &__link {
+        display: flex;
+      }
+
+      &__icon {
+        width: 20px;
+        object-fit: contain;
+        transition: 0.3s;
+        cursor: pointer;
+
+        @include media-queries.small-phone {
+          width: 18px;
+        }
+
+        &:hover {
+          filter: brightness(2.5);
+        }
+      }
+    }
+
+    &__btn {
+      display: flex;
+      gap: 10px;
+      padding: 10px 20px;
+      font-family: typography.$primary;
+      font-weight: 700;
+      color: palette.$primary;
+      background: none;
+      border: 1px solid palette.$border;
+      border-radius: 50px;
+      transition: 0.3s;
+
+      @include media-queries.small-phone {
+        display: none;
+      }
+
+      &:hover {
+        background-color: palette.$primary-btn-hover;
+      }
+
+      &__icon {
+        height: 15px;
+      }
     }
   }
 }
