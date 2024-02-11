@@ -1,74 +1,74 @@
 [
   {
-    "img": "../src/assets/html.png",
+    "img": "/html.png",
     "title": "HTML"
   },
   {
-    "img": "../src/assets/css.png",
+    "img": "/css.png",
     "title": "CSS"
   },
   {
-    "img": "../src/assets/sass.png",
+    "img": "/sass.png",
     "title": "Sass"
   },
   {
-    "img": "../src/assets/javascript.png",
+    "img": "/javascript.png",
     "title": "JavaScript"
   },
   {
-    "img": "../src/assets/react.png",
+    "img": "/react.png",
     "title": "React"
   },
   {
-    "img": "../src/assets/firebase.png",
+    "img": "/firebase.png",
     "title": "Firebase & Firebase"
   },
   {
-    "img": "../src/assets/java.png",
+    "img": "/java.png",
     "title": "Java"
   },
   {
-    "img": "../src/assets/sql.png",
+    "img": "/sql.png",
     "title": "Java"
   },
   {
-    "img": "../src/assets/spring.png",
+    "img": "/spring.png",
     "title": "Spring"
   },
   {
-    "img": "../src/assets/nestjs.png",
+    "img": "/nestjs.png",
     "title": "NestJS"
   },
   {
-    "img": "../src/assets/nodejs.png",
+    "img": "/nodejs.png",
     "title": "NodeJS"
   },
   {
-    "img": "../src/assets/aws.png",
+    "img": "/aws.png",
     "title": "Amazon Web Services"
   },
   {
-    "img": "../src/assets/git.png",
+    "img": "/git.png",
     "title": "Git"
   },
   {
-    "img": "../src/assets/python.png",
+    "img": "/python.png",
     "title": "Python"
   },
   {
-    "img": "../src/assets/assembly.png",
+    "img": "/assembly.png",
     "title": "LC-3"
   },
   {
-    "img": "../src/assets/swift.png",
+    "img": "/swift.png",
     "title": "Swift"
   },
   {
-    "img": "../src/assets/figma.png",
+    "img": "/figma.png",
     "title": "Figma"
   },
   {
-    "img": "../src/assets/photoshop.png",
+    "img": "/photoshop.png",
     "title": "Photoshop"
   }
 ]

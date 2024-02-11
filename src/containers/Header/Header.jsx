@@ -20,7 +20,7 @@ const Header = () => {
         <NavLink to="/">
           <img
             className={styles.header_small__logo}
-            src="../src/assets/logo.png"
+            src="/logo.png"
             alt="Marielle Lopez logo"
           />
         </NavLink>

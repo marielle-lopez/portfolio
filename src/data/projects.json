@@ -3,7 +3,7 @@
     "title": "Sound",
     "subtitle": "Buy a cassette, CD, or vinyl of your favourite album.",
     "description": "A mock e-commerce website selling physical audio formats of popular albums.",
-    "imgPath": "../src/assets/sound.png",
+    "imgPath": "/sound.png",
     "deployedLink": "https://shiny-marigold-33e42a.netlify.app",
     "githubLink": "https://github.com/marielle-lopez/e-shop/tree/development"
   },
@@ -11,7 +11,7 @@
     "title": "The Library",
     "subtitle": "Search for a book without having to worry about being quiet.",
     "description": "A website that uses the Google Books API to retrieve data on a user's search terms.",
-    "imgPath": "../src/assets/the-library.png",
+    "imgPath": "/the-library.png",
     "deployedLink": "https://dreamy-dragon-865373.netlify.app",
     "githubLink": "https://github.com/marielle-lopez/google-books/tree/development"
   },
@@ -19,7 +19,7 @@
     "title": "Morse Code Translator",
     "subtitle": "Do you know what's 'Hello world!' in Morse code?",
     "description": "A simple application that translates English to Morse and vice versa, also offering a text-to-audio feature for English to Morse translations.",
-    "imgPath": "../src/assets/morse-code-translator.png",
+    "imgPath": "/morse-code-translator.png",
     "deployedLink": "https://heroic-baklava-3c8cc6.netlify.app",
     "githubLink": "https://github.com/marielle-lopez/morse-code-translator/tree/development"
   },
@@ -27,7 +27,7 @@
     "title": "Scoop",
     "subtitle": "Drool over Scoop's menu of artisinal gelato.",
     "description": "A website for a mock company Scoop, purely made out of HTML, CSS, and JavaScript.",
-    "imgPath": "../src/assets/scoop.png",
+    "imgPath": "/scoop.png",
     "deployedLink": "https://dynamic-licorice-db12ac.netlify.app",
     "githubLink": "https://github.com/marielle-lopez/scoop"
   },
@@ -35,7 +35,7 @@
     "title": "Simple Weather",
     "subtitle": "Check out today's weather to know if you need to bring an umbrella.",
     "description": "A basic website that shows the current weather, utilising the user's IP address to obtain their location.",
-    "imgPath": "../src/assets/simple-weather.png",
+    "imgPath": "/simple-weather.png",
     "deployedLink": "https://shimmering-malasada-c72644.netlify.app",
     "githubLink": "https://github.com/marielle-lopez/simple-weather"
   },
@@ -43,7 +43,7 @@
     "title": "BananaOS",
     "subtitle": "BananaOS is your pick if you can't choose between the original macOS and Windows 98.",
     "description": "A website that lets you play Minesweeper, Connect 4, and offers a basic calculator.",
-    "imgPath": "../src/assets/banana-os.png",
+    "imgPath": "/banana-os.png",
     "deployedLink": "https://vermillion-frangollo-7bf88c.netlify.app",
     "githubLink": "https://github.com/marielle-lopez/fake-os/tree/development"
   }

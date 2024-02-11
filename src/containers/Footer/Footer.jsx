@@ -29,14 +29,14 @@ const Footer = () => {
         >
           <img
             className={styles.footer__links__link__icon}
-            src="../src/assets/linkedin.png"
+            src="/linkedin.png"
             alt="LinkedIn icon"
           />
         </Link>
         <Link className={styles.footer__links__link} to="/" target="_blank">
           <img
             className={styles.footer__links__link__icon}
-            src="../src/assets/email.png"
+            src="/email.png"
             alt="Email icon"
           />
         </Link>

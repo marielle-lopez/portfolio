@@ -6,14 +6,11 @@ const ExtendedAboutContainer = () => {
     <div className={styles.extended_about}>
       <div className={styles.extended_about__imgs}>
         <div className={styles.extended_about__imgs__img1}>
-          <CapsuleImg
-            path="../src/assets/dance.jpg"
-            alt="Me performing on stage"
-          />
+          <CapsuleImg path="/dance.jpg" alt="Me performing on stage" />
         </div>
         <div className={styles.extended_about__imgs__img2}>
           <CapsuleImg
-            path="../src/assets/singapore.jpg"
+            path="/singapore.jpg"
             alt="Me in Singapore's Cloud Forest in Gardens by the Bay"
           />
         </div>

@@ -7,7 +7,7 @@ const LandingPage = () => {
       <div className={styles.wrapper}>
         <img
           className={styles.img}
-          src="../src/assets/self-portrait.png"
+          src="/self-portrait.png"
           alt="Marielle Lopez"
         />
         <div className={styles.intro}>
