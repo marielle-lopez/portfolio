@@ -13,25 +13,12 @@
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 25px;
 
-  @include media-queries.small-phone {
-    width: 75px;
-    height: 100px;
-  }
-
   &__img {
     width: 45px;
-
-    @include media-queries.small-phone {
-      width: 30px;
-    }
   }
 
   &__title {
     text-align: center;
     font-family: typography.$accent-secondary;
-
-    @include media-queries.small-phone {
-      font-size: 12px;
-    }
   }
 }
