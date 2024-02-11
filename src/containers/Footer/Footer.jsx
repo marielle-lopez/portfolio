@@ -18,7 +18,7 @@ const Footer = () => {
         >
           <img
             className={styles.footer__links__link__icon}
-            src="../src/assets/github.png"
+            src="/github.png"
             alt="GitHub icon"
           />
         </Link>
