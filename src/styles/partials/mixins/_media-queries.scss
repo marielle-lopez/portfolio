@@ -5,19 +5,19 @@
 }
 
 @mixin phone {
-  @media only screen and (min-width: 378px) and (max-width: 430px) {
+  @media only screen and (min-width: 378px) and (max-width: 630px) {
     @content;
   }
 }
 
 @mixin small-tablet {
-  @media only screen and (min-width: 431px) and (max-width: 768px) {
+  @media only screen and (min-width: 631px) and (max-width: 999px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  @media only screen and (min-width: 1000px) and (max-width: 1500px) {
     @content;
   }
 }

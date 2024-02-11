@@ -8,19 +8,24 @@
   align-items: center;
 
   &_small {
-    display: none;
+    display: flex;
 
-    @include media-queries.small-tablet {
+    @include media-queries.small-phone {
       display: flex;
     }
 
-    @include media-queries.tablet {
+    @include media-queries.phone {
       display: flex;
     }
 
     &__logo {
       height: 30px;
       margin-bottom: 30px;
+      transition: 0.3s;
+
+      &:hover {
+        filter: brightness(1.25);
+      }
     }
   }
 
