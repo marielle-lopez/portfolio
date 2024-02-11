@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <animated.header className={styles.header} style={{ ...springs }}>
-      {/* <div className={styles.header_small}>
+      <div className={styles.header_small}>
         <NavLink to="/">
           <img
             className={styles.header_small__logo}
@@ -24,7 +24,7 @@ const Header = () => {
             alt="Marielle Lopez logo"
           />
         </NavLink>
-      </div> */}
+      </div>
 
       <div className={styles.header_large}>
         <div
@@ -42,13 +42,13 @@ const Header = () => {
             styles.header_large__centre,
           ].join(" ")}
         >
-          <NavLink to="/">
+          {/* <NavLink to="/">
             <img
               className={styles.header_large__logo}
               src="../src/assets/logo.png"
               alt="Marielle Lopez logo"
             />
-          </NavLink>
+          </NavLink> */}
         </div>
 
         {/* <div

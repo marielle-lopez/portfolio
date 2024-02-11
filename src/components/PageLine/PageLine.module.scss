@@ -30,6 +30,10 @@
     @include media-queries.phone {
       font-size: 12px;
     }
+
+    @include media-queries.small-tablet {
+      font-weight: 500;
+    }
   }
 
   &__line {

@@ -15,6 +15,11 @@
     gap: 35px;
   }
 
+  @include media-queries.small-tablet {
+    flex-direction: column;
+    gap: 35px;
+  }
+
   &__imgs {
     display: flex;
 

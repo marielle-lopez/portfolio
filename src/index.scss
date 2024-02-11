@@ -37,6 +37,10 @@ body {
   @include media-queries.phone {
     width: 100%;
   }
+
+  @include media-queries.small-tablet {
+    width: 100%;
+  }
 }
 
 // :root {

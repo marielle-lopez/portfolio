@@ -10,20 +10,13 @@
   &_small {
     display: none;
 
-    @include media-queries.small-phone {
+    @include media-queries.small-tablet {
       display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
-    }
-
-    @include media-queries.phone {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 30px;
     }
 
     &__logo {
       height: 30px;
+      margin-bottom: 30px;
     }
   }
 

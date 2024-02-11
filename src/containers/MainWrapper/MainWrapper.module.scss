@@ -18,4 +18,8 @@
   @include media-queries.phone {
     width: 80%;
   }
+
+  @include media-queries.small-tablet {
+    width: 80%;
+  }
 }
