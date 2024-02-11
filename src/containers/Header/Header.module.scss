@@ -4,98 +4,118 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 100px;
 
-  @include media-queries.small-phone {
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-  }
-
-  &__section {
-    width: 30%;
+  &_small {
+    display: none;
 
     @include media-queries.small-phone {
-      width: max-content;
-    }
-  }
-
-  &__centre {
-    text-align: center;
-  }
-
-  &__logo {
-    height: 40px;
-    transition: 0.3s;
-
-    @include media-queries.small-phone {
-      display: none;
-    }
-
-    &:hover {
-      filter: brightness(1.25);
-    }
-  }
-
-  &__right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-
-    &__external_links {
       display: flex;
-      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    &__logo {
+      height: 30px;
+    }
+  }
+
+  &_large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+
+    @include media-queries.small-phone {
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+    }
+
+    &__section {
+      width: 30%;
 
       @include media-queries.small-phone {
-        gap: 16px;
+        width: max-content;
       }
     }
 
-    &__link {
-      display: flex;
+    &__centre {
+      text-align: center;
     }
 
-    &__icon {
-      width: 20px;
-      object-fit: contain;
+    &__logo {
+      height: 40px;
       transition: 0.3s;
-      cursor: pointer;
 
       @include media-queries.small-phone {
-        width: 18px;
+        display: none;
       }
 
       &:hover {
-        filter: brightness(2.5);
+        filter: brightness(1.25);
       }
     }
-  }
 
-  &__btn {
-    display: flex;
-    gap: 10px;
-    padding: 10px 20px;
-    font-family: typography.$primary;
-    font-weight: 700;
-    color: palette.$primary;
-    background: none;
-    border: 1px solid palette.$border;
-    border-radius: 50px;
-    transition: 0.3s;
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 50px;
 
-    @include media-queries.small-phone {
-      display: none;
+      &__external_links {
+        display: flex;
+        gap: 20px;
+
+        @include media-queries.small-phone {
+          gap: 16px;
+        }
+      }
+
+      &__link {
+        display: flex;
+      }
+
+      &__icon {
+        width: 20px;
+        object-fit: contain;
+        transition: 0.3s;
+        cursor: pointer;
+
+        @include media-queries.small-phone {
+          width: 18px;
+        }
+
+        &:hover {
+          filter: brightness(2.5);
+        }
+      }
     }
 
-    &:hover {
-      background-color: palette.$primary-btn-hover;
-    }
+    &__btn {
+      display: flex;
+      gap: 10px;
+      padding: 10px 20px;
+      font-family: typography.$primary;
+      font-weight: 700;
+      color: palette.$primary;
+      background: none;
+      border: 1px solid palette.$border;
+      border-radius: 50px;
+      transition: 0.3s;
 
-    &__icon {
-      height: 15px;
+      @include media-queries.small-phone {
+        display: none;
+      }
+
+      &:hover {
+        background-color: palette.$primary-btn-hover;
+      }
+
+      &__icon {
+        height: 15px;
+      }
     }
   }
 }
