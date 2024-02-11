@@ -1,10 +1,21 @@
 import styles from "./Header.module.scss";
 import { NavLink, Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/NavBar";
+import { useSpring, animated, config } from "@react-spring/web";
 
 const Header = () => {
+  const springs = useSpring({
+    from: { y: -100, opacity: 0 },
+    to: { y: 0, opacity: 1 },
+    delay: 50,
+    config: {
+      tension: 280,
+      friction: 60,
+    },
+  });
+
   return (
-    <header className={styles.header}>
+    <animated.header className={styles.header} style={{ ...springs }}>
       <div className={[styles.header__section, styles.header__left].join(" ")}>
         <NavBar />
       </div>
@@ -60,7 +71,7 @@ const Header = () => {
           />
         </button>
       </div>
-    </header>
+    </animated.header>
   );
 };
 
