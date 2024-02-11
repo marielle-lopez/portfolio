@@ -24,7 +24,6 @@
 ## To-Do
 
 - Media queries
-- Upload skill-associated logos
 - Add 'Download CV' button
 - Make email icon clickable; copies email to clipboard
 
@@ -35,8 +34,23 @@
 - Create a gradient top-border to active NavLink
 - Make content scrollable without making browser adding a scroll bar
 - Add music via Spotify
+- Ensure GitHub links are to repositories of the main branch
+- Display extra details in an overlay of a project on hover
 
 ## Task Completion History
+
+### February 10, 2024
+
+- Re-worked my design mockup for my 'Projects' page
+- Created components related to the 'Projects' page and applied styling
+
+Today was all about the 'Projects' page. I didn't like my original design for the cards representing each project, so I ended up redoing it and came up with a mockup I was happy with. I then created a ProjectCard component and its associated container, implementing these on the 'Projects' page. I originally planned the ProjectCard component to have a layer that would appear on hover with extra details (detailed description and links to its GitHub repository and deployed version) on its related project, but I'll need to research a bit on this. For now, I'll place the repository and deployed links opposite the project title.
+
+### February 9, 2024
+
+- Researched [React Spring](https://www.react-spring.dev/docs) library to bring in animation to the project
+
+Used React Spring's high-order components (HOCs) to add animation to my portfolio, specifically for the Header and PageHeading components, as well as the main content of the website.
 
 ### February 8, 2024
 
