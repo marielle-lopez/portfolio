@@ -1,0 +1,62 @@
+@use "../../styles/partials/variables/typography";
+@use "../../styles/partials/variables/palette";
+
+.project_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  width: 350px;
+  padding: 40px 45px 0 45px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 45px;
+
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__header {
+      display: flex;
+      flex-grow: 1;
+
+      &__title {
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: typography.$accent-secondary;
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      &__links {
+        display: flex;
+        gap: 5px;
+
+        &__link {
+          height: 20px;
+          opacity: 25%;
+          transition: 0.3s;
+
+          &:hover {
+            opacity: 100%;
+          }
+        }
+      }
+    }
+
+    &__subtitle {
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
