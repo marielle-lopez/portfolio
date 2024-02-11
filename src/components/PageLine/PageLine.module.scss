@@ -12,6 +12,10 @@
     margin-bottom: 40px;
   }
 
+  @include media-queries.phone {
+    margin-bottom: 40px;
+  }
+
   &__heading {
     font-family: typography.$accent-secondary;
     font-size: 14px;
@@ -20,6 +24,10 @@
     color: rgba(0, 0, 0, 0.25);
 
     @include media-queries.small-phone {
+      font-size: 12px;
+    }
+
+    @include media-queries.phone {
       font-size: 12px;
     }
   }

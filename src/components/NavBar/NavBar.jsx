@@ -10,12 +10,18 @@ const NavBar = () => {
 
   return (
     <nav className={styles.nav}>
+      <NavLink className={linkStyles} to="/">
+        Home
+      </NavLink>
+
       <NavLink className={linkStyles} to="/about">
         About
       </NavLink>
+
       <NavLink className={linkStyles} to="/skills">
         Skills
       </NavLink>
+
       <NavLink className={linkStyles} to="/projects">
         Projects
       </NavLink>

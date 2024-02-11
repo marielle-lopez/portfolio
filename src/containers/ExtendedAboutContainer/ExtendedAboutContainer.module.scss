@@ -10,6 +10,11 @@
     gap: 35px;
   }
 
+  @include media-queries.phone {
+    flex-direction: column;
+    gap: 35px;
+  }
+
   &__imgs {
     display: flex;
 

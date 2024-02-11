@@ -19,6 +19,12 @@
     padding: 35px 40px 0 40px;
   }
 
+  @include media-queries.phone {
+    width: 240px;
+    border-radius: 35px;
+    padding: 35px 40px 0 40px;
+  }
+
   &__text {
     display: flex;
     flex-wrap: wrap;
@@ -43,12 +49,20 @@
           gap: 8px;
         }
 
+        @include media-queries.phone {
+          gap: 8px;
+        }
+
         &__link {
           height: 20px;
           opacity: 25%;
           transition: 0.3s;
 
           @include media-queries.small-phone {
+            height: 18px;
+          }
+
+          @include media-queries.phone {
             height: 18px;
           }
 
@@ -75,6 +89,11 @@
     border-right: 1px solid rgba(0, 0, 0, 0.05);
 
     @include media-queries.small-phone {
+      width: 95%;
+      height: 130px;
+    }
+
+    @include media-queries.phone {
       width: 95%;
       height: 130px;
     }

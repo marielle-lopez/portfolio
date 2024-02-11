@@ -21,6 +21,11 @@
     width: 200px;
     padding: 20px;
   }
+
+  @include media-queries.phone {
+    width: 200px;
+    padding: 20px;
+  }
 }
 
 .intro {
@@ -51,6 +56,10 @@
     @include media-queries.small-phone {
       margin-left: 40px;
     }
+
+    @include media-queries.phone {
+      margin-left: 40px;
+    }
   }
 
   &__heading {
@@ -60,6 +69,11 @@
     font-size: 48px;
 
     @include media-queries.small-phone {
+      font-size: 26px;
+      gap: 5px;
+    }
+
+    @include media-queries.phone {
       font-size: 26px;
       gap: 5px;
     }
@@ -106,6 +120,10 @@
   color: #bbbaba;
 
   @include media-queries.small-phone {
+    font-size: 10px;
+  }
+
+  @include media-queries.phone {
     font-size: 10px;
   }
 }

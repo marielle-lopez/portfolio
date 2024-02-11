@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <animated.header className={styles.header} style={{ ...springs }}>
-      <div className={styles.header_small}>
+      {/* <div className={styles.header_small}>
         <NavLink to="/">
           <img
             className={styles.header_small__logo}
@@ -24,7 +24,7 @@ const Header = () => {
             alt="Marielle Lopez logo"
           />
         </NavLink>
-      </div>
+      </div> */}
 
       <div className={styles.header_large}>
         <div
@@ -51,7 +51,7 @@ const Header = () => {
           </NavLink>
         </div>
 
-        <div
+        {/* <div
           className={[
             styles.header_large__right,
             styles.header_large__section,
@@ -85,16 +85,16 @@ const Header = () => {
               src="../src/assets/email.png"
               alt="Email icon"
             />
-          </div>
-          <button className={styles.header_large__btn}>
+          </div> */}
+        {/* <button className={styles.header_large__btn}>
             Download CV
             <img
               className={styles.header_large__btn__icon}
               src="../src/assets/download.png"
               alt="Download icon"
             />
-          </button>
-        </div>
+          </button> */}
+        {/* </div> */}
       </div>
     </animated.header>
   );

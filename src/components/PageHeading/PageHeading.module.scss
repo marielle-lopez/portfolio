@@ -9,4 +9,8 @@
   @include media-queries.small-phone {
     font-size: 36px;
   }
+
+  @include media-queries.phone {
+    font-size: 36px;
+  }
 }

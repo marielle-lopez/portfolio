@@ -5,12 +5,18 @@
 .header {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
 
   &_small {
     display: none;
 
     @include media-queries.small-phone {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    @include media-queries.phone {
       display: flex;
       justify-content: center;
       margin-bottom: 30px;
@@ -33,10 +39,19 @@
       margin-bottom: 50px;
     }
 
+    @include media-queries.phone {
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+    }
+
     &__section {
       width: 30%;
 
       @include media-queries.small-phone {
+        width: max-content;
+      }
+
+      @include media-queries.phone {
         width: max-content;
       }
     }
@@ -50,6 +65,10 @@
       transition: 0.3s;
 
       @include media-queries.small-phone {
+        display: none;
+      }
+
+      @include media-queries.phone {
         display: none;
       }
 
@@ -71,6 +90,10 @@
         @include media-queries.small-phone {
           gap: 16px;
         }
+
+        @include media-queries.phone {
+          gap: 16px;
+        }
       }
 
       &__link {
@@ -84,6 +107,10 @@
         cursor: pointer;
 
         @include media-queries.small-phone {
+          width: 18px;
+        }
+
+        @include media-queries.phone {
           width: 18px;
         }
 
@@ -106,6 +133,10 @@
       transition: 0.3s;
 
       @include media-queries.small-phone {
+        display: none;
+      }
+
+      @include media-queries.phone {
         display: none;
       }
 

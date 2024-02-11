@@ -13,4 +13,10 @@
     height: 275px;
     padding: 15px;
   }
+
+  @include media-queries.phone {
+    width: 175px;
+    height: 275px;
+    padding: 15px;
+  }
 }

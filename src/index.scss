@@ -28,11 +28,14 @@ body {
   align-items: center;
   flex-grow: 1;
   width: 1500px;
-  padding: 35px 15px;
+  padding: 35px 0;
 
   @include media-queries.small-phone {
     width: 100%;
-    padding: 25px 0;
+  }
+
+  @include media-queries.phone {
+    width: 100%;
   }
 }
 
