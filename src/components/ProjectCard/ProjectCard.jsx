@@ -18,14 +18,14 @@ const ProjectCard = ({
             <Link to={repoLink} target="_blank">
               <img
                 className={styles.project_card__text__header__links__link}
-                src="../src/assets/github.png"
+                src="/github.png"
                 alt="GitHub icon"
               />
             </Link>
             <Link to={deployedLink} target="_blank">
               <img
                 className={styles.project_card__text__header__links__link}
-                src="../src/assets/deployed.png"
+                src="/deployed.png"
                 alt="Deployed icon"
               />
             </Link>
