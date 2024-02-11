@@ -5,7 +5,7 @@ import data from "../../data/skills.json";
 
 const SkillsPage = () => {
   return (
-    <MainWrapper>
+    <MainWrapper widthConstraint={true}>
       <PageHeading title="Skills" />
       {data && <SkillCardList data={data} />}
     </MainWrapper>

@@ -6,7 +6,7 @@ import ExtendedAboutContainer from "../../containers/ExtendedAboutContainer/Exte
 
 const AboutPage = () => {
   return (
-    <MainWrapper>
+    <MainWrapper widthConstraint={true}>
       <PageHeading title="I'm Marielle." />
 
       <PageLine title="Education" />

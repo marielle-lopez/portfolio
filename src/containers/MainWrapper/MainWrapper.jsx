@@ -1,7 +1,7 @@
 import styles from "./MainWrapper.module.scss";
 import { useSpring, animated, config } from "@react-spring/web";
 
-const MainWrapper = ({ children }) => {
+const MainWrapper = ({ children, widthConstraint = false }) => {
   const springs = useSpring({
     from: { y: -100, opacity: 0 },
     to: { y: 0, opacity: 1 },
@@ -12,8 +12,12 @@ const MainWrapper = ({ children }) => {
     },
   });
 
+  const mainStyles = widthConstraint
+    ? `${styles.main} ${styles.width_constraint}`
+    : `${styles.main}`;
+
   return (
-    <animated.main className={styles.main} style={{ ...springs }}>
+    <animated.main className={mainStyles} style={{ ...springs }}>
       {children}
     </animated.main>
   );
