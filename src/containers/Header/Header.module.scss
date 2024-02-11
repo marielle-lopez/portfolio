@@ -11,6 +11,7 @@
 
   @include media-queries.small-phone {
     justify-content: space-evenly;
+    margin-bottom: 50px;
   }
 
   &__section {

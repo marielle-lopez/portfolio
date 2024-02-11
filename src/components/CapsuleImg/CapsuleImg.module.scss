@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins/media-queries";
+
 .capsule_img {
   width: 275px;
   height: 400px;
@@ -5,4 +7,10 @@
   object-fit: cover;
   border-radius: 155px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  @include media-queries.small-phone {
+    width: 175px;
+    height: 275px;
+    padding: 15px;
+  }
 }

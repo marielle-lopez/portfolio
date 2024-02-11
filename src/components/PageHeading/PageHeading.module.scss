@@ -1,7 +1,12 @@
 @use "../../styles/partials/variables/typography";
 @use "../../styles/partials/variables/palette";
+@use "../../styles/partials/mixins/media-queries";
 
 .page_heading {
   font-family: typography.$accent-primary;
   font-size: 64px;
+
+  @include media-queries.small-phone {
+    font-size: 36px;
+  }
 }

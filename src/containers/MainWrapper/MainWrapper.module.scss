@@ -12,6 +12,6 @@
   width: 1000px;
 
   @include media-queries.small-phone {
-    width: 100%;
+    width: 80%;
   }
 }

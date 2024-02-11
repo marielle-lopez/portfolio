@@ -1,4 +1,5 @@
 @use "../../styles/partials/variables/typography";
+@use "../../styles/partials/mixins/media-queries";
 
 .page_line {
   display: flex;
@@ -7,12 +8,20 @@
   width: 100%;
   margin: 50px 0;
 
+  @include media-queries.small-phone {
+    margin-bottom: 40px;
+  }
+
   &__heading {
     font-family: typography.$accent-secondary;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.25);
+
+    @include media-queries.small-phone {
+      font-size: 12px;
+    }
   }
 
   &__line {

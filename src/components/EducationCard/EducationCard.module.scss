@@ -1,5 +1,6 @@
 @use "../../styles/partials/variables/palette";
 @use "../../styles/partials/variables/typography";
+@use "../../styles/partials/mixins/media-queries";
 
 .education_card {
   display: flex;
@@ -8,20 +9,37 @@
   gap: 25px;
   width: 150px;
 
+  @include media-queries.small-phone {
+    gap: 15px;
+    width: 100px;
+  }
+
   &__period {
     font-family: typography.$accent-secondary;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 800;
+
+    @include media-queries.small-phone {
+      font-size: 11px;
+    }
   }
 
   &__img {
     filter: grayscale(1) brightness(0) opacity(0.85);
     height: 35px;
+
+    @include media-queries.small-phone {
+      height: 25px;
+    }
   }
 
   &__desc {
     text-align: center;
     font-size: 14px;
+
+    @include media-queries.small-phone {
+      font-size: 12px;
+    }
   }
 }

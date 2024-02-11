@@ -1,7 +1,14 @@
+@use "../../styles/partials/mixins/media-queries";
+
 .extended_about {
   display: flex;
   align-items: center;
   gap: 65px;
+
+  @include media-queries.small-phone {
+    flex-direction: column;
+    gap: 35px;
+  }
 
   &__imgs {
     display: flex;
