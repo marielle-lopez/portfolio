@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import SkillsPage from "./pages/SkillsPage/SkillsPage";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import Footer from "./containers/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
+
+        <Footer />
       </BrowserRouter>
     </>
   );
