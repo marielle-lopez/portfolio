@@ -1,5 +1,6 @@
 @use "../../styles/partials/variables/palette";
 @use "../../styles/partials/variables/typography";
+@use "../../styles/partials/mixins/media-queries";
 
 .wrapper {
   display: flex;
@@ -15,6 +16,11 @@
   padding: 30px;
   border: 1px solid palette.$border;
   border-radius: 225px;
+
+  @include media-queries.small-phone {
+    width: 200px;
+    padding: 20px;
+  }
 }
 
 .intro {
@@ -41,6 +47,10 @@
     font-family: typography.$accent-secondary;
     font-weight: 600;
     color: #bbbaba;
+
+    @include media-queries.small-phone {
+      margin-left: 40px;
+    }
   }
 
   &__heading {
@@ -48,6 +58,11 @@
     gap: 10px;
     font-family: typography.$accent-secondary;
     font-size: 48px;
+
+    @include media-queries.small-phone {
+      font-size: 26px;
+      gap: 5px;
+    }
 
     &__opening_tag {
       font-family: typography.$accent-primary;
@@ -89,6 +104,10 @@
   letter-spacing: 1px;
   font-size: small;
   color: #bbbaba;
+
+  @include media-queries.small-phone {
+    font-size: 10px;
+  }
 }
 
 @keyframes blink {

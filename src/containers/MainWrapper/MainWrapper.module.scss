@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins/media-queries";
+
 .main {
   display: flex;
   flex-direction: column;
@@ -8,4 +10,8 @@
 
 .width_constraint {
   width: 1000px;
+
+  @include media-queries.small-phone {
+    width: 100%;
+  }
 }

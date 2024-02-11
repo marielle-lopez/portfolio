@@ -1,8 +1,13 @@
 @use "../../styles/partials/variables/palette";
+@use "../../styles/partials/mixins/media-queries";
 
 .nav {
   display: flex;
   gap: 50px;
+
+  @include media-queries.small-phone {
+    gap: 10px;
+  }
 
   &__link {
     margin: 4px 0;
@@ -13,6 +18,10 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
+
+    @include media-queries.small-phone {
+      font-size: 12px;
+    }
 
     &:hover {
       color: palette.$primary-hover;
