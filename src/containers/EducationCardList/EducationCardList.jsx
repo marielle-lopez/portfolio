@@ -19,7 +19,7 @@ const EducationCardList = () => {
               <img
                 key={"star" + item.id}
                 className={styles.education_card_container__star_separator}
-                src="../src/assets/star.png"
+                src="/star.png"
                 alt="Star"
               />
             )}
