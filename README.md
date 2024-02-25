@@ -39,10 +39,6 @@
 
 ## Task Completion History
 
-### February 25, 2024
-
-- Fixed wrapping text bug for heading on the landing page
-
 ### February 10, 2024
 
 - Re-worked my design mockup for my 'Projects' page
