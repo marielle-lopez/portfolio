@@ -1,5 +1,13 @@
 [
   {
+    "title": "Chrono",
+    "subtitle": "See into the past, present, and future.",
+    "description": "A full-stack application that allows users to create, edit, and delete events in a calendar.",
+    "imgPath": "/chrono.png",
+    "deployedLink": "https://chrono-frontend-893bd951ecaf.herokuapp.com/",
+    "githubLink": "https://github.com/marielle-lopez/chrono"
+  },
+  {
     "title": "Sound",
     "subtitle": "Buy a cassette, CD, or vinyl of your favourite album.",
     "description": "A mock e-commerce website selling physical audio formats of popular albums.",
